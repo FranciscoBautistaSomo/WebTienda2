@@ -1,0 +1,303 @@
+/**************** hoja de estilo del examen North Myths************/
+
+/**************** ESTILO GENERAL *******************/
+    @font-face {
+        font-family: titulo;  /*nombre que yo quiera*/
+        src : url("../fonts/Suissnord.otf");
+    }
+
+     @font-face {
+        font-family: titulo2;
+        src: url("../fonts/Berlin.ttf");
+    }
+
+    @font-face {
+        font-family: texto;
+        src: url("../fonts/Berlin.ttf");
+    }
+
+   
+
+    html {
+        scroll-behavior : smooth;
+    }
+
+    body{
+        background-color : white;
+        margin: 0;
+        padding: 0;
+    }
+
+    #container {width: 80%;
+            background-color :white; 
+            margin: auto;
+    }
+    h1{letter-spacing: 0.1em;}
+
+    nav{
+        position: sticky;
+        top: 0; 
+
+        z-index:99;
+        opacity: 0.7;
+    }
+    .topnav {
+        overflow: hidden;
+        background-color: #cdffff;
+        font-family: texto;
+        letter-spacing: 0.2em;
+        
+    }
+
+    .topnav a {
+        float: left;
+        display: block;
+        color: #b38345;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    .topnav a:hover {
+        background-color: #62f8f8;
+        color: #6b4e28;
+    }
+
+    .topnav a.active {
+        background-color: #62f8f8;
+        color: #6b4e28;
+    }
+
+    .topnav .icon {
+        display: none;
+    }
+
+    @media screen and(max-width: 600px) {
+        .topnav a:not(:first-child) {
+            display: none;
+        }
+        .topnav a.icon {
+            float: right;
+            display: block;
+        }
+    }
+
+    @media screen and(max-width: 600px) {
+        .topnav.responsive {
+            position: relative;
+        }
+        .topnav.responsive .icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .topnav.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+        }
+    }
+
+/**************FIN DE LA NAV*******************/
+#hero {
+        background-image : url("../image/DSC_0513.JPG");
+        background-size: cover;/*estira o encoge la imagen para que ocupe el bloque entero*/
+        background-position: 66%; /* para recortar por el lado que le indique*/
+        height: 95vh; /*100vh seria el alto del dispositivo móvil, tablet o ps*/
+        position: relative;/* Como en Halloween para poder posicionar los rótulos */
+    }
+
+/****************** ESTILO DE LA SECCION HERO**************/
+    #hero h1{position: absolute;
+            top:0px;
+            left: 30px;
+            font-family: titulo;/* fuente de letra tipo runas*/
+            font-size: 3.5em;
+            color:#ad7936;
+        }
+
+    #M {
+        top : 120px;
+        left : 35px;
+        font-family : titulo;
+        position : absolute;
+        /*color : #FD4D0C;*/
+        font-size : 1.5em;
+        padding : 15px 0;
+        color:#ad7936;
+    }
+
+
+    #callToAction {position: absolute;
+                   bottom: 40px;  /*como es mucha distancia y  va en función de vh el alto total, lo ponga
+                                tambien on vh*/
+                    left:40px;
+                    padding: 5px; /*  para que parezca un botón*/
+                    background-color : #62f8f8;
+                    border-radius: 15px;
+                    font-family: texto;
+                    font-size: 1em;
+                    text-transform: capitalize;
+                    color : #b38345;
+    }
+
+    #callToAction:hover {background-color : #1e9797;
+                        cursor:pointer;
+    }
+
+    .fa-arrow-up{position: fixed;
+                 bottom: 20px;
+                 right: 20px;
+                 color:#1e9797;
+                 border: 2px solid #1e9797;
+                 padding: 3px;
+                 border-radius: 10%;
+                 font-size: 2em;
+                }
+
+
+/**************************** ESTILO INTRODUCCION SECTION ************************/
+
+    #introduccion{font-family: texto; 
+                color: black;
+                padding: 8%;
+                text-align: justify;
+                font-size: 1.2em;
+                border-bottom: 2px solid #b38345;
+    }
+
+    #introduccion h1 {font-family: titulo2;
+                    text-align:center ;}
+    #maleta {
+        width: 30%; /* como es grande que ocupe solo el 50% del espacio disponible*/
+        float: left; /* ojo nueva, para que la imagen quede rodeada por texto*/
+        margin:15px;
+    }
+
+    #introduccion p:first-letter{font-size: 1.8em;/*selector nuevo: first-letter*/
+    color : #b38345;}
+
+/*************** estilo de la sección a dos columnas *************/
+
+    #servicios {font-family: texto;
+                color: black;
+                font-size: 1.2em;
+                border-bottom : 2px solid #b38345;}
+
+
+    #servicios p:first-letter {font-size:1.8em;
+                            color: #b38345;
+                            }
+
+
+    #servicios h1{font-family: titulo2;
+                font-size: 2em;
+                text-align: center;}
+    .mitad {box-sizing: border-box; /*** OJO: para que el paddin y el borde cuente dentro del width***/
+            width: 50%;
+            float: left;
+            padding: 2%;}
+
+    .resetear{clear:both;}/*deja de apilar cualquier cosa que tenga detras.*/
+
+    #izqd{
+        padding: 30px 2%;
+        color:black;}
+
+
+    #katia {width: 50%; /**** del bloque en el que está contenida la imagen ********/
+        display: block;
+        margin: auto;
+    }
+    
+    #celop {
+        width: 50%; /**** del bloque en el que está contenida la imagen ********/
+        display: block;
+        margin: auto;
+    }
+
+
+/***************** GALLERY ****************/
+
+    #galeria h1{
+            font-family: titulo2;
+            font-size: 2em;
+            text-align: center;
+            padding: 30px 0;
+            color:black;
+    }
+
+    .cuarto{float: left;
+            background-color : #1e9797;
+            display: block;
+            width: 23%;
+            margin:1%;
+            margin-bottom: 3%;
+            float: left;
+            box-sizing: border-box;/** en el width entra el borde y el padding*-*/
+            padding: 2%;
+            border: solid 2px #b38345;
+            
+        }
+
+
+    .cuarto img { width: 100%;
+                margin:auto;
+                opacity: 0.5;}
+
+    .cuarto img:hover {opacity: 1;}
+
+    .cuarto h2{font-family: titulo2;
+                text-align: center;}
+
+/********************FOOTER****************************/
+    #firma{
+        margin: auto;       
+        padding: auto;
+        font-family: titulo2;   
+        text-align: center;
+        background-color : #B0C4DE;
+        float:left;
+    }
+
+
+    .pieMitad {
+        box-sizing : border-box; /*** OJO: para que el paddin y el borde cuente dentro del width***/
+        width: 50%;        
+        float: left;
+        /*padding:  10px;*/
+        text-align: justify;
+        background-color : #B0C4DE;
+        font-family: titulo2;
+        border-top : 2px solid #b38345;
+    }
+    #izqdPie {
+        padding: 0 1% 1% 3%;
+        color: black;
+        font-size: 1.2em;
+        /*padding-right: 10%;*/
+    }
+    #drchPie{
+        
+         padding: 0 1% 2.5% 3%;
+         font-size: 1.2em;
+        color: black;
+        /*padding-right: 10%;*/
+    }
+
+ /**************** MEDIA QUERY *********************/
+    #galeria{color:white;}
+    @media only screen and (max-width: 800px){
+        #maleta, .mitad  {width: 100%;}
+        #celop, #katia {width:50%;}
+        .cuarto  {width:46%;
+                margin:2%;}
+       .pieMitad {width:100%;
+                margin:auto;}        
+    }
+
+    @media only screen and (max-width: 400px) {
+                .cuarto {width: 90%;
+                        margin: 5%;}
+                }

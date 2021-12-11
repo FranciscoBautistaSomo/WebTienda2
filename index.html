@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUNA Moda y complementos</title>
+    <link rel="shortcut icon" href="./image/icons8-knitting-50.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style/style.css">
+    <!--Enlace con el font-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./javascripts/javascript.js"></script>
+</head>
+<body>
+    <div id="container">
+        <nav>
+          <div class="topnav" id="myTopnav">
+            <a href="#hero" class="active">Hero</a>
+            <a href="#introduccion">Introducción</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#galeria">Galería</a>            
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+         </div>
+        </nav>
+        <section id="hero">
+                <h1>LUNA</h1>
+                <div id="M"> MODA Y </br>
+                COMPLEMENTOS </div>
+                <a href="#introduccion">
+                    <p id="callToAction"><i class="fa fa-shopping-bag" aria-hidden="true">Descubrenos!</i></p>
+                </a>
+                <!--meto aqui la fecha de volver arriba porque es la seccion más vacia, pero 
+                da igual porque estará fija-->
+                <a href="#container"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+
+        </section>
+        <section id="introduccion">
+            <!-- esta sección tiene un texto-->
+            <h1>Abierto a la creatividad</h1>
+
+            <img id="maleta" src="image/maleta.jpg" alt="Maleta llena de sueños.">
+            <p>Bienvenidos a nuestro espacio, abierto para todo aquel que comparta nuestra visión.</p>
+            <p>Que se atreva a soñar y quiera compartir sus sueños con nosotros. Entra te queremos ayudar.</p>
+            <p>Buscas algo especial, para esa ocasión en la que necesites destacar o prefieres hacer un regalo especial. </p>
+            <p>Cuando no encuentras lo que buscas, aquí te ayudaremos, solo dinos que necesitas.</p>
+
+        </section>
+        <!--seccion que divide el contenido en dos columnas utilizando la propiedad float-->
+        <!--esta no venia en el examen original, es una explicación de clase-->
+        <section id="servicios">
+            <div class="mitad" id="izqd">
+                <h1>Que te ofrecemos</h1>
+                <p>En nuestro local encontrarás las últimas tendencias en moda femenina de temporada de la mano Celop. Somos punto oficial de Celop.</p>
+                <p>Y si lo tuyo es el punto de cruz te ofrecemos la mejor calidad en lanas y accesorios para tejer.</p>    
+                <p>Podrás contar con la calida de la prestigiosa marca Katia. Además si algo no sabes hacer, te acesoramos en tus trabajos.</p> 
+            </div>
+            <div class="mitad" id="drch">
+                <img id="katia" src="image/katia.png" alt="lanasKatia">
+                <img id="celop" src="image/celop.jpg" alt="CelopPunto">     
+            </div>
+            <div class="resetear"></div>
+        </section>
+
+        <section id="galeria">
+            <h1>GALERIA</h1>
+            <div class="cuarto">
+                <img id="galeria" src="image/gallery4_opt.png" alt="Exterior">
+                <h2>Exterior</h2>
+            </div>
+            <div class="cuarto">
+                <img id="galeria" src="image/gallery2.jpg" alt="Interior1">
+                <h2>Instalaciones</h2>
+            </div>
+            <div class="cuarto">
+                 <img id="galeria" src="image/gallery3.jpg" alt="Interior2">
+                <h2>Genero</h2>
+            </div>
+            <div class="cuarto">
+                <img id="galeria" src="image/gallery5.jpg" alt="Interior3">
+                <h2>Interior</h2>
+            </div>
+            <!--Despues de las columnas resetear los apilamientos-->
+            <div class="resetear"></div>    
+        </section>        
+    </div>
+    
+
+    <footer id="pie">
+        <div class="pieMitad" id="izqdPie"><h2>LUNA</h2>
+            <p>Donde estamos:</p>
+            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Avd. Rafael Pérez del Alamo 14, Bajo<br> Loja, 18300 (Granada)</p>
+            <p>Realizado por: Francisco A Bautista 1ºDAW - IES CAMPANILLAS (MALAGA)</br>franciscoalberto.bautista.fp@iescampanillas.com</p>
+            
+        </div>
+        <div class="pieMitad" id="drchPie"><h2>CONTACTO</h2>
+            <p><i class="fa fa-phone-square" aria-hidden="true"></i> 656 854 776 </p>
+            <p><i class="fa fa-envelope" aria-hidden="true"></i> memes.rp@gmail.com     
+            <p>Siguenos en:</p>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+        </div>
+        <div class="resetear"></div> 
+        <!--<div id="firma">
+            
+        </div>-->
+    </footer>
+    
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";   
+            } else {
+            x.className = "topnav";
+        }
+        }
+     </script>    
+</body>
+</html>

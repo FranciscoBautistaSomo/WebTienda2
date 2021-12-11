@@ -1,0 +1,94 @@
+/*************estilo de la pagina del trabajo de evaluacion********/
+
+/**************** ESTILO GENERAL *******************/
+@font-face {
+    font-family: Titulo;
+    src: url("../fonts/CookerCake.otf");
+}
+
+@font-face {
+    font-family: Secciones;
+    src: url("../fonts/Poppins-Black.ttf");
+}
+
+@font-face {
+    font-family : Texto;
+    src: url("../fonts/Andallan.otf");
+}
+
+body{
+    background-color : #F7DDD4;
+    margin: 0;
+    padding: 0;
+    font-family: Secciones;
+
+}
+
+#container {
+    width: 80%;
+    background-color: #FB8604;
+    margin: auto;
+}
+
+#hero {
+    background-image: url("../image/DSC_0513.JPG");
+    background-size: cover; /*estira o encoge la imagen para que ocupe el bloque entero*/
+    background-position : 66%; /* para recortar por el lado que le indique*/
+    height: 95vh; /*100vh seria el alto del dispositivo móvil, tablet o ps*/
+    position: relative;
+    
+}
+#hero h1{
+    top: 0px;
+    left: 30px;
+    font-family: Titulo;
+    position: absolute;
+    color: #FD4D0C;
+    font-size: 3.5em;
+    /*padding: 20px 0;*/
+
+}
+
+#M {
+    top: 115px;
+    left: 35px;
+    font-family: Titulo;
+    position: absolute;
+    color: #FD4D0C;
+    font-size: 1.5em; 
+    padding : 15px 0;
+}
+
+/*#C {
+    top: 70px;
+    left: 230px;
+    font-family: Titulo;
+    position: absolute;
+    color: #FD4D0C;
+    font-size: 1.5em;    
+}*/
+
+
+/**************************** ESTILO INTRODUCTION SECTION ************************/
+
+#introduction{
+    background-color: #F7DDD4;
+    font-family: Texto;
+    padding: 8%;
+    text-align: justify;
+}
+
+#introduction h1{
+    font-family: Titulo;
+}
+
+#maleta {
+    width: 50%;
+    float: left;
+    margin:15px;
+}
+
+#introduction p:first-letter{
+    font-size: 1.8em;
+    color : #FD4D0C;
+}
