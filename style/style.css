@@ -1,8 +1,6 @@
-/**************** hoja de estilo del examen North Myths************/
-
 /**************** ESTILO GENERAL *******************/
     @font-face {
-        font-family: titulo;  /*nombre que yo quiera*/
+        font-family: titulo; 
         src : url("../fonts/Suissnord.otf");
     }
 
@@ -102,17 +100,17 @@
 /**************FIN DE LA NAV*******************/
 #hero {
         background-image : url("../image/DSC_0513.JPG");
-        background-size: cover;/*estira o encoge la imagen para que ocupe el bloque entero*/
-        background-position: 66%; /* para recortar por el lado que le indique*/
-        height: 95vh; /*100vh seria el alto del dispositivo móvil, tablet o ps*/
-        position: relative;/* Como en Halloween para poder posicionar los rótulos */
+        background-size: cover;
+        background-position: 66%; 
+        height: 95vh; 
+        position: relative;
     }
 
 /****************** ESTILO DE LA SECCION HERO**************/
     #hero h1{position: absolute;
             top:0px;
             left: 30px;
-            font-family: titulo;/* fuente de letra tipo runas*/
+            font-family: titulo;
             font-size: 3.5em;
             color:#ad7936;
         }
@@ -130,10 +128,9 @@
 
 
     #callToAction {position: absolute;
-                   bottom: 40px;  /*como es mucha distancia y  va en función de vh el alto total, lo ponga
-                                tambien on vh*/
+                   bottom: 40px;  
                     left:40px;
-                    padding: 5px; /*  para que parezca un botón*/
+                    padding: 5px; 
                     background-color : #62f8f8;
                     border-radius: 15px;
                     font-family: texto;
@@ -170,13 +167,13 @@
     #introduccion h1 {font-family: titulo2;
                     text-align:center ;}
     #maleta {
-        width: 30%; /* como es grande que ocupe solo el 50% del espacio disponible*/
-        float: left; /* ojo nueva, para que la imagen quede rodeada por texto*/
+        width: 30%; 
+        float: left; 
         margin:15px;
     }
 
-    #introduccion p:first-letter{font-size: 1.8em;/*selector nuevo: first-letter*/
-    color : #b38345;}
+    #introduccion p:first-letter{font-size: 1.8em;
+        color : #b38345;}
 
 /*************** estilo de la sección a dos columnas *************/
 
@@ -194,25 +191,24 @@
     #servicios h1{font-family: titulo2;
                 font-size: 2em;
                 text-align: center;}
-    .mitad {box-sizing: border-box; /*** OJO: para que el paddin y el borde cuente dentro del width***/
+    .mitad {box-sizing: border-box; 
             width: 50%;
             float: left;
             padding: 2%;}
 
-    .resetear{clear:both;}/*deja de apilar cualquier cosa que tenga detras.*/
-
+    .resetear{clear:both;}
     #izqd{
         padding: 30px 2%;
         color:black;}
 
 
-    #katia {width: 50%; /**** del bloque en el que está contenida la imagen ********/
+    #katia {width: 50%;
         display: block;
         margin: auto;
     }
     
     #celop {
-        width: 50%; /**** del bloque en el que está contenida la imagen ********/
+        width: 50%; 
         display: block;
         margin: auto;
     }
@@ -235,7 +231,7 @@
             margin:1%;
             margin-bottom: 3%;
             float: left;
-            box-sizing: border-box;/** en el width entra el borde y el padding*-*/
+            box-sizing: border-box;
             padding: 2%;
             border: solid 2px #b38345;
             
@@ -263,7 +259,7 @@
 
 
     .pieMitad {
-        box-sizing : border-box; /*** OJO: para que el paddin y el borde cuente dentro del width***/
+        box-sizing : border-box;
         width: 50%;        
         float: left;
         /*padding:  10px;*/
